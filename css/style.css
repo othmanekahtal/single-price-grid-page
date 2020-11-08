@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Karla', sans-serif;
+  font-size: 16px;
+  background-color: hsl(204, 43%, 93%);
+  font-weight: 400;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+h1,
+h2 {
+  font-weight: 700;
+}
+main {
+  height: 555px;
+  border-radius: 5px;
+  overflow: hidden;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+}
+main p {
+  line-height: 1.7;
+}
+
+main .description-part {
+  background-color: white;
+  color: hsl(218, 22%, 67%);
+  padding: 50px;
+}
+.description-part h1 {
+  color: hsl(179, 62%, 49%);
+  margin-bottom: 25px;
+}
+.description-part h2 {
+  color: hsl(71, 73%, 54%);
+  margin-bottom: 15px;
+}
+main .row-fluid {
+  color: white;
+  height: 300px;
+}
+
+main .row-fluid::after {
+  display: block;
+  content: "";
+  clear: both;
+}
+.row-fluid h2 {
+  padding-bottom: 25px;
+}
+main .subscription-part {
+  background-color: hsl(179, 62%, 43%);
+  float: left;
+  width: 50%;
+  padding: 25px;
+  height: 100%;
+}
+.subscription__price {
+  padding: 10px 0;
+}
+.subscription__price--value {
+  display: inline-block !important;
+  font-size: 35px;
+  font-weight: 700;
+  padding-right: 20px;
+}
+.subscription__price--plan {
+  position: relative;
+  top: -7px;
+}
+.subscription-part .subscription__btn {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 45px;
+  margin-top: 25px;
+  background-color: hsl(71, 73%, 54%);
+  color: white;
+  border-radius: 5px;
+  text-align: center;
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: all 0.45s ease;
+}
+.subscription__btn:hover {
+  background-color: hsl(71, 73%, 45%);
+}
+.subscription__btn:active {
+  background-color: hsl(71, 73%, 40%);
+}
+main .about-part {
+  background-color: hsl(179, 62%, 49%);
+  float: left;
+  width: 50%;
+  padding: 25px;
+  height: 100%;
+}
+.about-part ul {
+  list-style-type: none;
+}
+.about-part li {
+  padding: 5px;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
