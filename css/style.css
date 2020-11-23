@@ -19,7 +19,6 @@ h2 {
   font-weight: 700;
 }
 main {
-  height: 555px;
   border-radius: 5px;
   overflow: hidden;
   box-shadow: 0 10px 35px rgba(0, 0, 0, 0.2);
@@ -106,4 +105,26 @@ main .about-part {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+@media only screen and (max-width: 37.5em) {
+  body {
+    padding: 50px;
+    width: 100%;
+    overflow-x: hidden;
+    max-height: none;
+  }
+  main {
+    width: 85%;
+    margin: 0 auto;
+  }
+  main h1 {
+    font-size: 25px;
+  }
+  .row-fluid {
+    display: block;
+  }
+  .row-fluid > div {
+    width: 100%;
+    display: block;
+  }
 }
