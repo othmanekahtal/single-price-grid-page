@@ -1,11 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 body {
-  font-family: 'Karla', sans-serif;
+  font-family: "Karla", sans-serif;
   font-size: 16px;
   background-color: hsl(204, 43%, 93%);
   font-weight: 400;
@@ -43,23 +43,18 @@ main .description-part {
 }
 main .row-fluid {
   color: white;
-  height: 300px;
+  display: table;
+  width: 100%;
 }
 
-main .row-fluid::after {
-  display: block;
-  content: "";
-  clear: both;
-}
 .row-fluid h2 {
   padding-bottom: 25px;
 }
 main .subscription-part {
+  display: table-cell;
   background-color: hsl(179, 62%, 43%);
-  float: left;
   width: 50%;
   padding: 25px;
-  height: 100%;
 }
 .subscription__price {
   padding: 10px 0;
@@ -94,11 +89,10 @@ main .subscription-part {
   background-color: hsl(71, 73%, 40%);
 }
 main .about-part {
+  display: table-cell;
   background-color: hsl(179, 62%, 49%);
-  float: left;
-  width: 50%;
   padding: 25px;
-  height: 100%;
+  width: 50%;
 }
 .about-part ul {
   list-style-type: none;
